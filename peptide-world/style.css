@@ -1,0 +1,15 @@
+/*
+Theme Name: Peptide World
+Theme URI: https://github.com/ChrisD-Tonum/PeptideWorld
+Author: Chris D
+Description: Custom WordPress theme for Peptide World — educational peptide and hormone therapy site.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: peptide-world
+*/
+
+/*
+ * Base styles stripped for Elementor Pro transition.
+ * Full original backed up in /backup-pre-elementor/style.css
+ * Peptide card grid styles remain in assets/css/main.css
+ */
