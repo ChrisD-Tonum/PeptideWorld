@@ -69,9 +69,6 @@ function peptide_world_setup() {
         'flex-width'  => true,
     ] );
 
-    // Editor stylesheet so Gutenberg block editor matches frontend styles.
-    add_editor_style( 'assets/css/editor-style.css' );
-
     // Load theme text domain for translations.
     load_theme_textdomain( 'peptide-world', PEPTIDE_WORLD_DIR . '/languages' );
 }
