@@ -66,6 +66,20 @@
 }
 
 /* ==========================================================================
+   ELEMENTOR TYPOGRAPHY INHERITANCE
+   Explicitly pull Elementor's global font into the peptide page content.
+   Elementor applies its font to its own widget classes, not bare PHP content.
+   Using the standard Elementor CSS variable with inherit as fallback.
+   ========================================================================== */
+
+.container,
+.peptide-controls,
+.peptide-grid,
+.peptide-modal-overlay {
+    font-family: var(--e-global-typography-text-font-family, inherit);
+}
+
+/* ==========================================================================
    PEPTIDE CARD GRID
    Rendered by templates/peptide-database.php, filtered by main.js.
    ========================================================================== */
