@@ -18,9 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-    get_header();
-}
+get_header();
 
 // ============================================================================
 // SUPABASE FETCH
@@ -36,9 +34,7 @@ if ( ! defined( 'SUPABASE_URL' ) || ! defined( 'SUPABASE_ANON_KEY' ) ) {
         echo '<strong>Admin notice:</strong> SUPABASE_URL and SUPABASE_ANON_KEY are not defined in wp-config.php.';
         echo '</div></div>';
     }
-    if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'footer' ) ) {
-        get_footer();
-    }
+    get_footer();
     return;
 }
 
@@ -436,8 +432,4 @@ sort( $categories );
     </div>
 </div>
 
-<?php
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'footer' ) ) {
-    get_footer();
-}
-?>
+<?php get_footer(); ?>
